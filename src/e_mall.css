@@ -1,0 +1,69 @@
+.dispChange1 {
+  display: none;
+  transition: 2s;
+}
+
+.dispChange2 {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  transition: 2s;
+}
+
+.shopButtons {
+  position: absolute;
+  background-color: beige;
+  width: 100%;
+  padding: 125px;
+  width: fit-content;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+.shopButtons a {
+  margin: 10px;
+}
+
+.dispAppear1 {
+  display: none;
+  transition: 2s;
+}
+.dispAppear2 {
+  display: block;
+  background-color: black;
+  border-radius: 75px;
+  padding-bottom: 25px;
+  transition: 2s;
+}
+
+.homeChange {
+  background-color: slategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 55px;
+  border-radius: 50px;
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+}
+.homeChange:hover {
+  background-color: skyblue;
+}
+
+.allContentChange{
+  display:none;
+}
+.choicBoxChange{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}

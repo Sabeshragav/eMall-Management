@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Food Billing</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/project_EMall/src/access.css">
+  <script async src="/project_EMall/food_sales_access.js"></script>
+</head>
+
+<body>
+  <form action="server.php" method="post">
+    <div class="totalMegaBill">
+
+
+      <!-- (A) ADD ITEM -->
+      <div class="invoiceHead">
+        <h1>Food Invoicing</h1>
+      </div>
+      <div class="customerName">
+        Customer Name : <input type="text" name="customerName" id="idCustomerName" class="nameBox"><br>
+        Mobile Number : <input type="number" name="customerNum" id="idCustomerNum" class="numBox">
+      </div>
+
+      <div id="billAdd" class="mi">Add Item</div>
+
+      <!-- (B) BILL ITEMS -->
+      <div id="billItems"></div>
+      <datalist id="itemList"></datalist>
+      <template id="itemRow">
+        <div class="row">
+          <input type="text" class="item" list="itemList" placeholder="Item Name" name="itemName">
+          <input type="number" class="price" min="0.00" step="0.01" placeholder="Price EA" name="price">
+          <input type="number" class="qty" min="1" placeholder="Qty" name="quantity">
+          <input type="button" class="del mi" value="X">
+        </div>
+      </template>
+
+      <!-- (C) BILL TOTAL -->
+      <div id="billTotal">
+        <div id="billTotalAmt">Rs.0</div>
+        <input type="submit" onclick="alertMessage()" id="billPrint" class="mi" name="food_proceed" value="Proceed" disabled>
+      </div>
+
+      <!-- hidden box (total Price) -->
+      <div class="totalPriceBox">
+        <input type="text" value="0" name="totalPrice" class="totalPrice" id="totalPriceInput">
+      </div>
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>

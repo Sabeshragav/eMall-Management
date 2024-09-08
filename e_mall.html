@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mall</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/e_mall.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!--header-->
+
+    <div class="allContent">
+        <header class="bg-slate-800 shadow-2xl shadow-blue-950">
+            <div class="container mx-auto py-4 px-8">
+                <h1 class="text-3xl font-bold text-white">E-Mall Property Management</h1>
+            </div>
+        </header>
+        <!--get started-->
+        <div class="getStarted mt-3">
+            <section class="bg-blue-500 text-white py-20 shadow-lg shadow-blue-400">
+                <div class=" container mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-4">Welcome to Our Website</h2>
+                    <p class="text-lg mb-8">We can ease you E-Mall experience ❤️</p>
+                    <button onclick="change()"
+                        class="bg-white text-blue-500 font-bold py-2 px-6 rounded-full hover:bg-gray-700 hover:text-white">
+                        Get Started</button>
+                </div>
+            </section>
+            <!--features section-->
+            <section class="py-20 shadow-lg shadow-white">
+                <div class="container mx-auto px-8">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Our Features</h2>
+                    <div class="flex flex-wrap -mx-4">
+
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+                            <div class="bg-white rounded-lg p-6 shadow">
+                                <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
+                                <p>Our websites are fully responsive and look great on all devices.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+                            <div class="bg-white rounded-lg p-6 shadow">
+                                <h3 class="text-xl font-bold mb-2">User interface</h3>
+                                <p>We offer an engaging user interface with interactive features.</p>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
+                            <div class="bg-white rounded-lg p-6 shadow">
+                                <h3 class="text-xl font-bold mb-2">Customizable</h3>
+                                <p>Our website is highly customizable to fit your unique needs and branding.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Shops section-->
+        <div class="totalBox hidden">
+            <div class="listOfShops flex align-top h-full ">
+                <h1 class="text-5xl font-bold">List of Shops </h1>
+            </div>
+            <div class="shopButtons shadow-2xl hover:shadow-black">
+                <button onclick="dressSection()"
+                    class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                    Dress
+                </button>
+                <button onclick="furnitureSection()"
+                    class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                    Furniture
+                </button>
+                <button onclick="foodSection()"
+                    class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                    Food Court
+                </button>
+
+                <!-- <a href=""
+                class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                Mobiles
+            </a>
+            
+            <button onclick=""
+                    class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                    Jewels
+                </button>
+            <a href=""
+                class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                Theatre
+            </a>
+            <a href=""
+                class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                Spa
+            </a>
+            <a href=""
+                class=" bg-blue-500 text-xl rounded-xl p-5   hover:bg-indigo-500 hover:text-white hover:text-2xl hover:shadow-lg hover:shadow-black hover:font-bold duration-100 ...">
+                Cafe
+            </a> -->
+
+
+            </div>
+
+        </div>
+
+        <!--Contact us section-->
+        <section class="bg-gray-800 text-white py-20 mt-5 ">
+            <div class="contactBox1 container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to get started?</h2>
+                <p class="text-lg mb-8">Contact us today to discuss your project.</p>
+                <button onclick="disappear()"
+                    class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-400 hover:text-black">Contact
+                    Us</button>
+            </div>
+            <div class="contactBox2 hidden duration-1000">
+                <h1 class="text-3xl font-bold mb-2 ml-40">Project Done By : </h1>
+                <div class="ml-64 mt-9 text-xl">
+                    <ul class="list-disc">
+                        <li>PAVITHRA S</li>
+                        <li>VINUBHARATHI M S</li>
+                        <li>SORNA MALLIKA M</li>
+                        <li>PRABHA S</li>
+                        <li>SABESHRAGAV G K</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--BACK button-->
+    <div class="homeButton hidden">
+        <a href="e_mall.html" class="py-2 px-4 rounded-full w-16 h-11">
+            Back
+        </a>
+    </div>
+
+
+
+
+
+    <!-- dress admin/sales -->
+    <div class="dressChoiceBox hidden">
+        <br><br><br>
+        <div class="flex flex-col justify-around items-center">
+            <h1 class="text-5xl font-bold mt-36">Choose the rights [DRESS LOGIN]</h1><br><br>
+            <!-- <button onclick="selectChoice1()" class="bg-blue-500  text-white font-bold py-3 px-4 rounded-full hover:bg-blue-400 hover:text-black">Manager</button> -->
+            <a href="/project_EMall/dress_admin_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Manager</a>
+            <a href="/project_EMall/dress_sales_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Salesperson</a>
+        </div>
+    </div>
+
+    <!-- furniture admin/sales -->
+    <div class="furnitureChoiceBox hidden">
+        <br><br><br>
+        <div class="flex flex-col justify-around items-center">
+            <h1 class="text-5xl font-bold mt-36">Choose the rights [FURNITURE LOGIN]</h1><br><br>
+            <!-- <button onclick="selectChoice1()" class="bg-blue-500  text-white font-bold py-3 px-4 rounded-full hover:bg-blue-400 hover:text-black">Manager</button> -->
+            <a href="/project_EMall/furniture_admin_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Manager</a>
+            <a href="/project_EMall/furniture_sales_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Salesperson</a>
+        </div>
+    </div>
+
+    <!-- food admin/sales -->
+    <div class="foodChoiceBox hidden">
+        <br><br><br>
+        <div class="flex flex-col justify-around items-center">
+            <h1 class="text-5xl font-bold mt-36">Choose the rights [FOODCOURT LOGIN]</h1><br><br>
+            <!-- <button onclick="selectChoice1()" class="bg-blue-500  text-white font-bold py-3 px-4 rounded-full hover:bg-blue-400 hover:text-black">Manager</button> -->
+            <a href="/project_EMall/food_admin_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Manager</a>
+            <a href="/project_EMall/food_sales_login.php" target="_blank"
+                class="bg-blue-500 text-center text-white font-bold py-3 px-4 mt-5 rounded-full hover:bg-blue-400 hover:text-black">Salesperson</a>
+        </div>
+    </div>
+
+
+    <!--script-->
+    <script>
+        function change() {
+            var col1 = document.querySelector(".getStarted");
+            var col2 = document.querySelector(".totalBox");
+            var col3 = document.querySelector(".homeButton");
+            col1.setAttribute("class", "dispChange1");
+            col2.setAttribute("class", "dispChange2");
+            col3.setAttribute("class", "homeChange");
+        }
+        function disappear() {
+            var col1 = document.querySelector(".contactBox1");
+            var col2 = document.querySelector(".contactBox2");
+            col1.setAttribute("class", "dispAppear1");
+            col2.setAttribute("class", "dispAppear2");
+        }
+
+        function dressSection() {
+            var col1 = document.querySelector(".allContent");
+            var col2 = document.querySelector(".dressChoiceBox");
+            col1.setAttribute("class", "allContentChange");
+            col2.setAttribute("class", "choiceBoxChange");
+        }
+
+        function furnitureSection() {
+            var col1 = document.querySelector(".allContent");
+            var col2 = document.querySelector(".furnitureChoiceBox");
+            col1.setAttribute("class", "allContentChange");
+            col2.setAttribute("class", "choiceBoxChange");
+        }
+
+        function foodSection() {
+            var col1 = document.querySelector(".allContent");
+            var col2 = document.querySelector(".foodChoiceBox");
+            col1.setAttribute("class", "allContentChange");
+            col2.setAttribute("class", "choiceBoxChange");
+        }
+
+    </script>
+
+</body>
+
+</html>
